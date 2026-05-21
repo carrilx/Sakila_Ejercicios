@@ -1,0 +1,84 @@
+site_name: Ejercicios SQL — Base de Datos Sakila
+site_description: Colección de ejercicios SQL resueltos sobre la base de datos Sakila, con soluciones y explicaciones detalladas.
+site_author: Xaime Carril
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
+    - search.highlight
+    - search.suggest
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+
+repo_name: carrilx/Sakila_Ejercicios
+repo_url: https://github.com/carrilx/Sakila_Ejercicios
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      lang: es
+
+nav:
+  - Inicio: index.md
+  - Tema 1 — Consultas Básicas:
+    - Ejercicios: tema1-consultas-basicas/ejercicios.md
+  - Tema 2 — JOINs:
+    - Ejercicios: tema2-joins/ejercicios.md
+  - Tema 3 — Agregación y Agrupación:
+    - Ejercicios: tema3-agregacion/ejercicios.md
+  - Tema 4 — Subconsultas:
+    - Ejercicios: tema4-subconsultas/ejercicios.md
+  - Tema 5 — Vistas:
+    - Ejercicios: tema5-vistas/ejercicios.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/xacarril
